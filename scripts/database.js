@@ -64,9 +64,65 @@ const database = {
             location: "Ibiza, Mediterranean",
             food: "Seaweed",
         },
+    ],
+    tankTips : [
+        {
+            tip: "Clean Tanks",
+            description: "Lorem ipsum dolor sit amet"
+        },
+        {
+            tip: "Filter Water",
+            description: "Ut enim ad minim veniam"
+        },
+        {
+            tip: "Check Water Salinity Levels",
+            description: "Duis aute irure dolor in reprehenderit"
+        }
+    ],
+    locations: [
+        {
+            city: "Sydney",
+            country: "Australia"
+        },
+        {
+            city: "Cancun",
+            country: "Mexico"
+        },
+        {
+            city: "Rincon",
+            country: "Puerto Rico"
+        },
+        {
+            city: "Capetown",
+            country: "South Africa"
+        },
+        {
+            city: "Bora Bora",
+            country: "French Polynesia"
+        },
+        {
+            city: "St. Lucia",
+            country: "Caribbean"
+        },
+        {
+            city: "Parga",
+            country: "Greece"
+        },
+        {
+            city: "Ibiza",
+            country: "Mediterranean"
+        }
     ]
 }
 
 export const getFish = () => {
     return database.fish.map(fish => ({...fish}))
+}
+
+export const getTankTips = () => {
+    return database.tankTips.map(tankTips => ({...tankTips}))
+}
+
+export const getLocations = () => {
+    return database.locations.map(locations => ({...locations}))
 }
