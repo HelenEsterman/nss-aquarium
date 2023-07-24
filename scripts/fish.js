@@ -28,3 +28,52 @@ export const FishList = () => {
 
     return htmlString
 }
+
+
+export const mostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    let holyFish = []
+    const fishes = getFish()
+
+    for (const fish of fishes) {
+        if (fish.size % 3 === 0) {
+            holyFish.push(fish)
+        }
+
+    }
+
+    return console.log(holyFish)
+}
+
+export const soldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    let soldiers = []
+    const fishes = getFish()
+
+    for (const fish of fishes) {
+        if (fish.size % 5 === 0) {
+            soldiers.push(fish)
+        }
+    }
+
+    return console.log(soldiers)
+}
+
+export const nonHolyFish = () => {
+    // Any fish not a multiple of 3 or 5
+    let regularFish = []
+    const fishes = getFish()
+
+    for (const fish of fishes) {
+        if(fish.size % 3 != 0 && fish.size % 5 != 0){
+            regularFish.push(fish)
+        }
+    }
+    return console.log(regularFish)
+}
+
+const fishes = getFish()
+
+mostHolyFish(fishes)
+soldierFish(fishes)
+nonHolyFish(fishes)
