@@ -1,0 +1,71 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-family: copperplate;
+    font-size: 2em;
+    margin-top: 1rem;
+}
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+#container {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#container3 {
+    display: flex;
+    justify-content: center;
+}
+
+.fishList {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.fishCard {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+
+.fish__image {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100px;
+    border-radius: 3em;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fishInfo {
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+}
+
+#tipsHeader {
+    text-align: center;
+}
