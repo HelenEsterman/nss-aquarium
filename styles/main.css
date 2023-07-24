@@ -42,12 +42,14 @@ aside {
 .fishList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 } 
 
 .fishCard {
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-basis: 25%;
 } 
 
 .fish__image {
